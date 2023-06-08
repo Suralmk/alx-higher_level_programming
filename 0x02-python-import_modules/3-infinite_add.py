@@ -1,10 +1,10 @@
 #!/usr/bin/python3
+import sys
+
 
 if __name__ == "__main__":
-    """calculate the operation of addition for all the elements."""
-    import sys
-
-    n = 0
-    for i in range(len(sys.argv) - 1):
-        n += int(sys.argv[i + 1])
-    print("{}".format(n))
+    argc = len(sys.argv)
+    sum = 0
+    for i in range(1, argc):
+        sum += int(sys.argv[i])
+    print(sum)
