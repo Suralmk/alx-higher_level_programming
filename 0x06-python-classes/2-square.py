@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+
 """defining class"""
+
 class Square:
     """class defined"""
 
@@ -9,7 +11,7 @@ class Square:
         raise TypeError : if size is other than int
         raise ValueError : if size is less than zero"""
 
-        if not isinstance(self, size=0):
+        if not isinstance(self, int):
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError(size must be >= 0)
