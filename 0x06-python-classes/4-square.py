@@ -21,14 +21,6 @@ class Square:
 
         self.__size = size
 
-    def area(self):
-        """
-        Calculate the area of the square
-        Returns: the area of the square
-        """
-
-        return (self.__size ** 2)
-
     @property
     def size(self):
         """retrive size"""
@@ -46,3 +38,10 @@ class Square:
 
         self.__size = value
 
+    def area(self):
+        """
+        Calculate the area of the square
+        Returns: the area of the square
+        """
+
+        return (self.__size ** 2)
