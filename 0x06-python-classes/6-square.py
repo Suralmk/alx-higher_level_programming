@@ -67,11 +67,11 @@ class Square:
             pos_where += "\n"
         for val in range(self.size):
             for i in range(self.position[0]):
-                pos += " "
+                pos_where += " "
             for j in range(self.size):
-                pos += "#"
-            pos += "\n"
-        return pos
+                pos_where += "#"
+            pos_where += "\n"
+        return pos_where
 
     def my_print(self):
         """for printing the position"""
