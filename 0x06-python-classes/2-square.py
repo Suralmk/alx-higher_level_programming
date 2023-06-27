@@ -7,10 +7,12 @@ class Square:
 
     def __init__(self, size=0):
 
-        """
-        instanciated the class with variable xize
-        raise TypeError : if size is other than int
-        raise ValueError : if size is less than zero
+        """Initializing this square class
+        Args:
+            size: represnets the size of the square defined
+        Raises:
+            TypeError: if size is not integer
+            ValueError: if size is less than zero
         """
 
         if not isinstance(size, int):
