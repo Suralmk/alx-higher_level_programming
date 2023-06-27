@@ -76,4 +76,3 @@ class Square:
     def my_print(self):
         """for printing the position"""
         print(self.pos_print(), end='')
-
