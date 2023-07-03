@@ -6,17 +6,17 @@ class Rectangle:
     """Represents  rectangle."""
 
     def __init__ (self, width=0, height=0):
-        """Initialize a new rectangle
+        """Initialize a new rectangle.
         Args:
-            width(int): width of the new rctangle
-            height(int): height of the rectangle
+            width(int): width of the new rctangle.
+            height(int): height of the rectangle.
         """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Define width method to retrive  widdth"""
+        """Define width method to retrive  widdth."""
         return self.__width
 
     @width.setter
@@ -29,7 +29,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """height mwthod to retrive height."""
+        """Height mwthod to retrive height."""
         return self.__height
         
     @height.setter
