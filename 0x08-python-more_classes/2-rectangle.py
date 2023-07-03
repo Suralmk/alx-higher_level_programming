@@ -49,3 +49,15 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
+
+    def __str__(self):
+        """Returns Printable form of the rectangle in #"""
+        if self.__width == 0 or self.__height == 0:
+            return ("")
+        rectangle = ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                rectangle = rectangle + '#'
+            self.__height -= self.__heiht
+            rectangle = rectangle + "\n"
+        return (rectangle)
