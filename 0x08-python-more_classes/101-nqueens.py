@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""this program solces the nqueen puzzzel
+game
+"""
+
 import sys
 
 
@@ -29,7 +33,8 @@ def get_solution(board):
 
 
 def xout(board, row, col):
-    """X oout boar row and column
+    """X out spots on a chessboard.
+
     Args:
         board (list): The current working chessboard.
         row (int): The row where a queen was last played.
@@ -78,7 +83,8 @@ def xout(board, row, col):
 
 
 def recursive_solve(board, row, queens, solutions):
-    """Recursively solve an N-queens puzzle.
+    """solving the puzzle using recuresive technique
+
     Args:
         board (list): The current working chessboard.
         row (int): The current working row.
@@ -116,4 +122,4 @@ if __name__ == "__main__":
     board = init_board(int(sys.argv[1]))
     solutions = recursive_solve(board, 0, 0, [])
     for sol in solutions:
-        print(sol)              
+        print(sol)
